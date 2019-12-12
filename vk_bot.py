@@ -1,11 +1,18 @@
+#Не терять
+# https://vk.com/dev/methods
+
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
+from random import randint
+
+def get_random_id():
+    return randint(100000,999999)
 
 def write_msg(user_id, message):
-    vk.method('messages.send', {'user_id': user_id, 'message': message})
+    vk.method('messages.send', {'user_id': user_id,  'random_id': get_random_id(), 'message': message})
 
 # API-ключ созданный ранее
-token = "6a9c267cd469388709a9e9acaddbe0aa81a0abbf12239b3e597a31729ffbddb9c88e80a443554c918b8f7"
+token = "5d6230782449ccdafbdff21b22f0c1ca764a568e9de7ce63aff604f693ed5fedbedfad732d9455516ea2a"
 
 # Авторизуемся как сообщество
 vk = vk_api.VkApi(token=token)
@@ -21,7 +28,8 @@ for event in longpoll.listen():
     
         # Если оно имеет метку для меня( то есть бота)
         if event.to_me:
-        
+            
+            print(event)
             # Сообщение от пользователя
             request = event.text
             
