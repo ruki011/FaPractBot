@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 
 def site1_module():
+
+    theatre_dict = {}
     response = requests.get("https://www.bolshoi.ru/timetable/").text
     content = BeautifulSoup(response,"lxml")
     
@@ -13,11 +15,16 @@ def site1_module():
         date = section.find("div", class_="timetable_content__date")
         date_first = date.find("b", class_="timetable_content__date_date").text
         date_second = date.find("i", class_="timetable_content__date_weekday").text
-        #print(date_first, date_second)
+        date_string = date_first+" ,"+date_second
+        theatre_dict[date_string] = {}
+
 
         #Находим все представления/выступления в секции (на текущую дату)
         theatres = section.find_all("tr", class_="past_q")
         for theatre in theatres:
+
+            #Словарь для временного хранения данных
+            locale_dict = {}
             
             #Название выступления
             theatre_name = theatre.find("a", class_="timetable_content__performance_title")
