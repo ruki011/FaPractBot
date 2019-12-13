@@ -34,50 +34,56 @@ def site2(url):
     content = BeautifulSoup(response,"lxml")
 
     #Баннеры в будние дни
+    daily_list = []
     banners = content.find_all("td", class_="day withShow")
     for banner in banners:
 
         #Название выступления
         banner_titles = banner.find_all("div", class_="banner")
-        for banner_title in banner_titles:
-            check = banner_title.find("p")
-            print(check.get("data-date"))
-            value = banner_title.text.replace("\t","")
-            value = value.replace("\n"," ")
-            print(value)
+        theatre_list = all_banners(banner_titles)
+        daily_list.extend(theatre_list)
     
     #Баннер сегодня
+    today_list = []
     today_banners = content.find_all("td", class_="day today withShow")
     for banner in today_banners:
         
         #Название выступления
         banner_titles = banner.find_all("div", class_="banner")
-        for banner_title in banner_titles:
-            check = banner_title.find("p")
-            print(check.get("data-date"))
-            value = banner_title.text.replace("\t","")
-            value = value.replace("\n"," ")
-            print(value)
+        theatre_list = all_banners(banner_titles)
+        today_list.extend(theatre_list)
 
 
     #Баннеры в выходные дни
+    weekday_list = []
     weekday_banners = content.find_all("td", class_="day withShow weekday")
     for banner in weekday_banners:
         #Название театра
         banner_titles = banner.find_all("div", class_="banner")
-        for banner_title in banner_titles:
-            check = banner_title.find("p")
-            print(check.get("data-date"))
-            value = banner_title.text.replace("\t","")
-            value = value.replace("\n"," ")
-            print(value)
+        theatre_list = all_banners(banner_titles)
+        weekday_list.extend(theatre_list)
 
+    #Соединяем все списки 
+    print(daily_list, today_list, weekday_list)
     return True
 
 #Функция для получения всех спектаклей на текущий день
 def all_banners(banner_titles):
-    list = []
-    pass
+    out_list = []
+    for b_title in banner_titles:
+        
+        #Получение даты концерта
+        check = b_title.find("p")
+        concert_date = check.get("data-date")
+        
+        #Получение отформатированного (красивого) названия спектакля 
+        value = b_title.text.replace("\t","")
+        concert_name = value.replace("\n"," ")
+        concert_name = concert_name[2:]
+        formatted_name = concert_name[:len(concert_name)-3]
+        out_list.append({"name": formatted_name,"date":concert_date})
+    
+    return out_list
 
 #Функция, вызываемая из бота
 def parser():
