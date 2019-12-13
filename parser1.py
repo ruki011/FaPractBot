@@ -1,11 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
 
-def site1_module():
+def site1():
 
     theatre_dict = {}
     response = requests.get("https://www.bolshoi.ru/timetable/").text
-    content = BeautifulSoup(response,"lxml")
+    content = BeautifulSoup(response, "lxml")
     
     #Секции с распределением по датам
     sections = content.find_all("div", class_="DATE timetable_content")
@@ -52,4 +52,4 @@ def site1_module():
     print(theatre_dict)
 
 if __name__ == "__main__":
-    site1_module()
+    site1()

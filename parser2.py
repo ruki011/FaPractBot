@@ -1,7 +1,9 @@
+#Добавить JSON отдачу?
 from bs4 import BeautifulSoup
 import requests
 
-def date_detector(date):
+#Функция формирования url на основе даты
+def date2url(date):
     month_dict = {
         "01": "1",
         "02": "2",
@@ -17,18 +19,17 @@ def date_detector(date):
         "12": "12",
     }
 
-
     month, year = date.split("/")  
     if month in month_dict:
         month = month_dict[month]
     
     url = "https://et-cetera.ru/poster/?month="+month+"&year="+year
+    return url
 
-def site2_module():
+#Функция с основной логикой парсинга сайта
+def site2(url):
 
-    #theatre_dict = {}
-    
-    #print("https://et-cetera.ru/poster/?month=2&year=2020") - динамическая ссылка
+    theatre_dict = {}
     response = requests.get("https://et-cetera.ru/poster/").text
     content = BeautifulSoup(response,"lxml")
 
@@ -71,10 +72,18 @@ def site2_module():
             value = value.replace("\n"," ")
             print(value)
 
+    return True
+
+#Функция для получения всех спектаклей на текущий день
+def all_banners(banner_titles):
+    list = []
+    pass
+
+#Функция, вызываемая из бота
 def parser():
     #Введите месяц и год в формате 01/2020:
-    date_detector
-    pass
+    url = date2url("01/2020")
+    result = site2(url)
 
 if __name__ == "__main__":
     parser()
