@@ -35,17 +35,17 @@ for event in longpoll.listen():
             if request == "/start":
                 
                 keyboard = VkKeyboard(one_time=True)
-                keyboard.add_button('Белая кнопка', color=VkKeyboardColor.DEFAULT)
-                keyboard.add_button('Зелёная кнопка', color=VkKeyboardColor.DEFAULT)
+                keyboard.add_button('bolshoi ru', color=VkKeyboardColor.DEFAULT)
+                keyboard.add_button('et-cetera ru', color=VkKeyboardColor.DEFAULT)
+                message_str = "Привет, я подскажу тебе график спектаклей\nДля начала выбери источник, который хочешь использовать:"
 
-                vk.method('messages.send', {'user_id': event.user_id,  'random_id': get_random_id(), "keyboard" : keyboard.get_keyboard(), 'message': "CHECK"})
+                vk.method('messages.send', {'user_id': event.user_id,  'random_id': get_random_id(), "keyboard" : keyboard.get_keyboard(), 'message': message_str})
 
-                #write_msg(event.user_id, "Привет, я подскажу тебе график спектаклей\nДля начала выбери источник, который хочешь использовать:")
-            
-            elif request == "Белая кнопка":
-                write_msg(event.user_id, "Белая кнопка")
+            elif request == "bolshoi ru":
+                write_msg(event.user_id, "Получаем данные..")
 
-            elif request == "'Зелёная кнопка":
-                write_msg(event.user_id, "'Зелёная кнопка")
+            elif request == "et-cetera ru":
+                write_msg(event.user_id, "Введите месяц и год в формате 01/2020 для отображения расписания на конкретный период:")
+                #Ввод периода
             else:
                 write_msg(event.user_id, "Не поняла вашего ответа...")
