@@ -64,14 +64,12 @@ def site2_module():
     for banner in banners:
 
         #Название театра
-        banner_title = content.find("div", class_="banner")
+        banner_title = banner.find("div", class_="banner")
         check = banner_title.find("p")
-        print(check)
-        #for c in check:
-        #    print(c)
+        print(check.get("data-date"))
         value = banner_title.text.replace("\t","")
         value = value.replace("\n"," ")
-        #print(value)
+        print(value)
 
 
 if __name__ == "__main__":
