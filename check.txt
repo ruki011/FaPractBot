@@ -1,0 +1,1292 @@
+Работаем
+<!DOCTYPE html >
+
+<html lang="ru">
+    <head>
+        <title>Афиша</title>
+		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="Et Cetera, театр Калягина, афиша спектаклей" />
+<meta name="description" content="Афиша спектаклей театра Et Cetera" />
+<link href="/bitrix/js/main/core/css/core.css?14674520748964" type="text/css"  rel="stylesheet" />
+<link href="/_css/reset.css?14674520681016" type="text/css"  rel="stylesheet" />
+<link href="/_css/styles.css?156250227368968" type="text/css"  rel="stylesheet" />
+<link href="/_css/jquery.fancybox.css?14674520685201" type="text/css"  rel="stylesheet" />
+<link href="/_css/horizontal.css?14674520682605" type="text/css"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','USER_ID':'','SERVER_TIME':'1576236484','SERVER_TZ_OFFSET':'10800','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'99d9d33b0a314f97e93e4399bed63da4','SITE_ID':'s1'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.js?146745207478911"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?146745207430654"></script>
+<script type="text/javascript" src="/bitrix/js/main/session.js?14674520742880"></script>
+
+<script type="text/javascript">
+bxSession.Expand(1440, '99d9d33b0a314f97e93e4399bed63da4', false, 'da11752e6e93dc2e550a7d9dc41838ca');
+</script>
+
+<script type="text/javascript" src="/_js/jquery-1.8.2.min.js?146745206893435"></script>
+<script type="text/javascript" src="/_js/jquery.fancybox.pack.js?146745206823135"></script>
+<script type="text/javascript" src="/_js/code.js?14674520682"></script>
+<script type="text/javascript" src="/_js/functions.js?157502405052723"></script>
+<script type="text/javascript" src="/_js/for_sly/modernizr.js?14674520685317"></script>
+<script type="text/javascript" src="/_js/for_sly/plugins.js?14674520684802"></script>
+<script type="text/javascript" src="/_js/for_sly/sly.min.js?146745206815927"></script>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+
+
+
+<link rel="alternate" media="only screen and (max-width: 400px)" href="https://et-cetera.ru/mobile/">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TK6P9QX');</script>
+<!-- End Google Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56085942-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+gtag('config', 'UA-56085942-1', {
+   'custom_map': {
+     'dimension1': 'clientId',
+   }
+});
+setTimeout(function(){
+gtag('event', location.pathname, {
+  'event_category': 'Новый посетитель'
+});
+}, 15000);
+</script>
+<!-- postmaster.mail.ru -->
+<meta name="mailru-verification" content="0c0e479d0c7b0528" />
+<!-- /postmaster.mail.ru -->
+<!-- intickets.ru -->
+<link rel="stylesheet" href="//s3.intickets.ru/intickets.min.css">
+<script src="//s3.intickets.ru/intickets.min.js"></script>
+<!-- /intickets.ru -->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '442473676182880'); 
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+fbq('track', 'AddToCart');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=442473676182880&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Facebook Pixel Code -->
+<script>
+   !function(f,b,e,v,n,t,s)
+   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+   if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+   n.queue=[];t=b.createElement(e);t.async=!0;
+   t.src=v;s=b.getElementsByTagName(e)[0];
+   s.parentNode.insertBefore(t,s)}(window, document,'script',
+   'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '1547161622006603');
+   fbq('track', 'PageView');
+   fbq('track', 'ViewContent');
+   fbq('track', 'AddToCart');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+   src="https://www.facebook.com/tr?id=1547161622006603&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Facebook Pixel Code -->
+<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '323731701614932');
+	fbq('track', 'PageView');
+	fbq('track', 'ViewContent');
+	fbq('track', 'AddToCart');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=323731701614932&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  
+<!-- VK Pixel Code -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-231549-gyQWa';</script>
+<!-- End VK Pixel Code -->
+<!-- New Year Snow -->
+<script type="text/javascript" src="/_js/snowfall.jquery.min.js"></script>
+<!-- End New Year Snow -->
+<meta name="yandex-verification" content="b01a894f3f8b83b7" />
+    </head>
+    <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK6P9QX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+                <header>
+            <div class="hrWrap">
+				<div class="headerRight">
+					<!--<div class="moscow-dept-logo"><a href="http://kultura.mos.ru" target="_blank"><img src="/_images/imgMoscowDept.png" alt="MoskowDept"></a></div>-->
+					<h6>Заказ билетов:</h6>
+					<a href="tel:+74957817811"><span class="tel">+7 <span>(495)</span> 781 781 1</span></a>
+					<div style="height: 25px;"><span class="mailing" sp-show-form="105195">Подписка на новости</span></div>
+                       <script src="//static-login.sendpulse.com/apps/fc3/build/loader.js" sp-form-id="e63e13040b6f310221cca2dc1ea5165875c222b1d365ad36b1a42630c7f21f69"></script><div style="height: 25px;">
+					   <a href="/search/">Поиск по сайту </a><img src="/upload/medialibrary/images/search.png" style="float: left;"><!--<div class="mailingLabel">.</div>-->
+					</div>
+					<div style="height: 20px;"><span style="height: 20px;font-family: Arial;"><span style="border-bottom: 1px dashed #2d2d2d;" class="specialVersion">
+												<a href="?s">Версия для слабовидящих</a>
+												</span> <img src="/upload/medialibrary/images/icon_Aa.png" style="width: 20px;margin-left: 5px;"></span></div>
+					<a class="abiframelnk" href="https://iframeab-pre0932.intickets.ru/"><div class="buyTicketLabel" style="padding: 6px 0px; width: 200px; height: 50px; background-image: url(&quot;/upload/medialibrary/images/btnEtCetera.png&quot;) !important; background:none"></div></a>
+					<!--<a href="/tickets/buy/"><div class="buyTicketLabel" style="padding: 6px 0px; width: 200px; height: 50px; background-image: url(&quot;/upload/medialibrary/images/btnEtCetera.png&quot;) !important; background:none"></div></a>-->
+					<a href="https://www.facebook.com/TheatreEtCetera/" target="_blank"><img src="/_images/iconFb.png" alt=""></a>
+					<a href="http://vkontakte.ru/club20489512" target="_blank"><img src="/_images/iconVk.png" alt=""></a>
+					<a href="http://www.youtube.com/user/TheatreEtCetera" target="_blank"><img src="/_images/iconYt.png" alt=""></a>
+					<a href="http://instagram.com/theatre_etcetera" target="_blank"><img src="/_images/iconHz.png" alt=""></a>
+				</div>
+                <div class="headerLeft"><div class="logo"><a href="/"><img src="/_images/Logo_150.png" alt="на главную" title="на главную" /></a></div>
+<a href="https://2019.culture.ru/" style="margin-right: 10px;float: left;" target="_blank"><img src="/_images/imgMoscowDept.png?20032019" title="Год театра" ></a>
+<a href="//www.mos.ru/kultura/"><img src="/upload/medialibrary/images/Logo_DeptCultMoscow.png" target="_blank" ></a>
+</div>
+                <div class="headerCenter">
+                    <!--<a href="http://kultura.mos.ru" target="_blank"><img src="/_images/imgMoscowDept.png" alt="MoskowDept"></a>-->
+					<!--<a href="/"><img src="/_images/logo_Block.png" alt="Et Cetera" /></a>-->
+                    <h3 class="p">МОСКОВСКИЙ ТЕАТР &laquo;Et Cetera&raquo;</h3>
+                    <a href="/"><img src="/_images/imgEtCetera.png" alt="Et Cetera" /></a>
+                    <h3>художественный руководитель <span><a href="/boss/kalyagin/" style="color: #990101;text-decoration: none;"">александр калягин</a></span></h3>
+                    <h3 style="padding-top: 10px;">главный режиссер <span><a href="/boss/robert-sturua/" style="color: #990101;text-decoration: none;"">Роберт Стуруа</a></span></h3>
+                </div>
+            </div>
+        </header>
+
+        <div class="headerLines"></div>
+
+        <div class="leftColumn">
+            <div class="lcT">
+                <div class="lcB">
+                    <div class="rightColumn">
+                        <div class="rcT">
+                            <div class="rcB">
+                                <div class="content">	
+                                    
+    <ul class="nav mainNav">
+
+        
+            
+            
+                                
+                                                                            <li><a href="/poster/" class="active">афиша</a></li>
+                                    
+                                
+                            
+                            
+                        
+            
+            
+                                
+                                                                            <li><a href="/theatre/" class="">театр</a></li>
+                                    
+                                
+                            
+                            
+                        
+            
+            
+                                    <li><a href="/performance/" class="">спектакли</a>
+                        <ul>
+                        
+                            
+                            
+                        
+            
+            
+                                
+                                                                            <li><a href="/performance/children/">Детские спектакли</a></li>
+                                    
+                                
+                            
+                            
+                        
+                            </ul></li>            
+            
+                                
+                                                                            <li><a href="/tickets/audiens/" class="">билеты</a></li>
+                                    
+                                
+                            
+                            
+                        
+            
+            
+                                
+                                                                            <li><a href="/actors/" class="">труппа</a></li>
+                                    
+                                
+                            
+                            
+                        
+            
+            
+                                    <li><a href="/news/" class="">новости</a>
+                        <ul>
+                        
+                            
+                            
+                        
+            
+            
+                                
+                                                                            <li><a href="/news/MosDept/">Новости mos.ru</a></li>
+                                    
+                                
+                            
+                            
+                        
+                            </ul></li>            
+            
+                                
+                                                                            <li><a href="/press/article/" class="">пресса</a></li>
+                                    
+                                
+                            
+                            
+                        
+            
+            
+                                
+                                                                            <li><a href="/press/tour/" class="">гастроли</a></li>
+                                    
+                                
+                            
+                            
+                        
+            
+            
+                                
+                                                                            <li><a href="/contacts/" class="">контакты</a></li>
+                                    
+                                
+                            
+                            
+                        
+                        
+                    </ul>
+                     
+<script>
+    $(document).ready(function()
+    {
+       
+    })
+</script>
+<div id="comp_1142bd57f6997bc7fe2e6e7755c51ff7"><style>/*
+.afisha table td p {
+    padding: 0px 10px;
+	}
+.afisha table td div.premierLabel2 {
+	position: absolute;
+	padding: 10px;
+	font: 14px/1.1em Hvn;
+	color: #ba0000;
+	text-shadow: 0px 0px 1px #fff,0px 0px 3px #fff;
+		/*cursor: default;*/
+	}*/
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.strastnoy_label {
+    color: white;
+    font: 14px 'Hvn Regular';
+    vertical-align: top;
+    clear: both;
+    padding: 5px;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	var $frame = $('.slides');
+	//var $frame = $('.slide');
+		var $wrap = $frame.parent();
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
+			itemNav: 'basic',
+			smart: 1,
+			activateMiddle: 1,
+			mouseDragging: 0,
+			touchDragging: 1,
+			releaseSwing: 1,
+			scrollSource: null,
+			startAt: 0,
+			scrollBy: 0,
+			speed: 2500,
+			elasticBounds: 1,
+			easing: 'swing',//easing: 'easeOutExpo',
+			dragHandle: 1,
+			dynamicHandle: 1,
+			clickBar: 1,
+			cycleBy: 'items', // Enable automatic cycling by 'items' or 'pages'.
+			cycleInterval: 4000,//5000, // Delay between cycles in milliseconds.
+			pauseOnHover: 0, // Pause cycling when mouse hovers over the FRAME.
+			activatePageOn: "click" // Event used to activate page. Can be: click, mouseenter, ...
+		});
+   });
+</script>
+
+
+<h1></h1>
+<div class="afisha">
+    <div class="date">
+        <a href="/poster/?month=11&year=2019" onclick="BX.ajax.insertToNode('/poster/?month=11&year=2019&bxajaxid=1142bd57f6997bc7fe2e6e7755c51ff7', 'comp_1142bd57f6997bc7fe2e6e7755c51ff7'); return false;"  class="nav clndr-previous-button" onselectstart="return false" >&lt;</a>
+        <span>Декабрь 2019</span>
+        <a href="/poster/?month=1&year=2020" onclick="BX.ajax.insertToNode('/poster/?month=1&year=2020&bxajaxid=1142bd57f6997bc7fe2e6e7755c51ff7', 'comp_1142bd57f6997bc7fe2e6e7755c51ff7'); return false;"  class="nav clndr-next-button" onselectstart="return false" >&gt;</a>
+    </div>
+    <table>
+        <tr class="days_names">
+                            <th class="day">Пн</th>
+                            <th class="day">Вт</th>
+                            <th class="day">Ср</th>
+                            <th class="day">Чт</th>
+                            <th class="day">Пт</th>
+                            <th class="day weekday">Сб</th>
+                            <th class="day weekday">Вс</th>
+                    </tr>
+        <tr>
+                                                                            			<td class="day past">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">25</div>
+                    </td>
+                                    			<td class="day past">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">26</div>
+                    </td>
+                                    			<td class="day past">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">27</div>
+                    </td>
+                                    			<td class="day past">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">28</div>
+                    </td>
+                                    			<td class="day past">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">29</div>
+                    </td>
+                                    			<td class="day past weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">30</div>
+                    </td>
+                                    			<td class="day withShow weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/44c/140_190_2/44c8560db0b4fc15a10684e4432b5910.JPG');cursor:pointer;" onclick="window.location='/performance/revizor-versiya/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/revizor-versiya/"><p data-perfomans-id="15754" data-date="01.12.2019">
+															Ревизор.Версия														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">18:00</span>
+												<br><img src="/upload/medialibrary/images/LastTickets__60x23.png" alt="Последние билеты">
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">1</div>
+                    </td>
+                            </tr>
+            <tr>
+                                                                			<td class="day">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">2</div>
+                    </td>
+                                    			<td class="day">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">3</div>
+                    </td>
+                                    			<td class="day">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">4</div>
+                    </td>
+                                    			<td class="day">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">5</div>
+                    </td>
+                                    			<td class="day">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">6</div>
+                    </td>
+                                    			<td class="day weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">7</div>
+                    </td>
+                                    			<td class="day weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">8</div>
+                    </td>
+                            </tr>
+            <tr>
+                                                                			<td class="day">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">9</div>
+                    </td>
+                                    			<td class="day">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">10</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/099/140_190_2/0999dc0b7fe76da233de8eda8ae4abaa.jpg');cursor:pointer;" onclick="window.location='/performance/blazhennyy-ostrov/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/blazhennyy-ostrov/"><p data-perfomans-id="16939" data-date="11.12.2019">
+															Блаженный остров														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">11</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/099/140_190_2/0999dc0b7fe76da233de8eda8ae4abaa.jpg');cursor:pointer;" onclick="window.location='/performance/blazhennyy-ostrov/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/blazhennyy-ostrov/"><p data-perfomans-id="16939" data-date="12.12.2019">
+															Блаженный остров														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">12</div>
+                    </td>
+                                    			<td class="day today withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/709/140_190_2/709e5b2e5dddd160a8b649aa0f21d81b.jpg');cursor:pointer;" onclick="window.location='/performance/zemlya-elzy-pokaz/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/zemlya-elzy-pokaz/"><p data-perfomans-id="15752" data-date="13.12.2019">
+															Земля Эльзы														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												<br><img src="/upload/medialibrary/images/LastTickets__60x23.png" alt="Последние билеты">
+												</div>
+								</a>
+				</div>
+		</div>
+									
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/692/140_190_2/692fa6072542edcfcaf34f185c363c76.jpg');cursor:pointer;" onclick="window.location='/performance/tsiniki/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/tsiniki/"><p data-perfomans-id="16827" data-date="13.12.2019">
+															Циники														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">20:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">13</div>
+                    </td>
+                                    			<td class="day withShow weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/163/140_190_2/1631f4249123b04128161d3c669a79f6.jpg');cursor:pointer;" onclick="window.location='/performance/utinaya-okhota/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/utinaya-okhota/"><p data-perfomans-id="5965" data-date="14.12.2019">
+															Утиная охота														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">14</div>
+                    </td>
+                                    			<td class="day withShow weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/feb/140_190_2/feb17e78be1862c7ba4336a9d4a2b2d9.jpg');cursor:pointer;" onclick="window.location='/performance/eto-tak-esli-vam-tak-kazhetsya/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/eto-tak-esli-vam-tak-kazhetsya/"><p data-perfomans-id="16231" data-date="15.12.2019">
+															Это так (если вам так кажется)														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">18:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+									
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/c03/140_190_2/c036437306b58148a6c7bb1df0589419.jpg');cursor:pointer;" onclick="window.location='/performance/v-zone-dostupa/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/v-zone-dostupa/"><p data-perfomans-id="16414" data-date="15.12.2019">
+															В зоне доступа														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">15</div>
+                    </td>
+                            </tr>
+            <tr>
+                                                                			<td class="day">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">16</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/feb/140_190_2/feb17e78be1862c7ba4336a9d4a2b2d9.jpg');cursor:pointer;" onclick="window.location='/performance/eto-tak-esli-vam-tak-kazhetsya/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/eto-tak-esli-vam-tak-kazhetsya/"><p data-perfomans-id="16231" data-date="17.12.2019">
+															Это так (если вам так кажется)														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+																		<br>
+												<img src="/upload/medialibrary/images/SoldOut__60x23.png" alt="Все билеты проданы">
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">17</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/ffc/140_190_2/ffceaa0efcede4adffe3e69d1a7b5529.JPG');cursor:pointer;" onclick="window.location='/performance/serdtse-ne-kamen/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/serdtse-ne-kamen/"><p data-perfomans-id="5336" data-date="18.12.2019">
+															Сердце не камень														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">18</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/c6f/140_190_2/c6ff547a821ea281bc9c52ceff23fcda.jpg');cursor:pointer;" onclick="window.location='/performance/komediya_oshibok/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/komediya_oshibok/"><p data-perfomans-id="5323" data-date="19.12.2019">
+															Комедия ошибок														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">19</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/2df/140_190_2/2df7841963d5c960c6d3e6972d76bed3.jpg');cursor:pointer;" onclick="window.location='/performance/litsa/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/litsa/"><p data-perfomans-id="5331" data-date="20.12.2019">
+															Лица														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+																		<br>
+												<img src="/upload/medialibrary/images/SoldOut__60x23.png" alt="Все билеты проданы">
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">20</div>
+                    </td>
+                                    			<td class="day withShow weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/44c/140_190_2/44c8560db0b4fc15a10684e4432b5910.JPG');cursor:pointer;" onclick="window.location='/performance/revizor-versiya/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/revizor-versiya/"><p data-perfomans-id="15754" data-date="21.12.2019">
+															Ревизор.Версия														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												<br><img src="/upload/medialibrary/images/LastTickets__60x23.png" alt="Последние билеты">
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">21</div>
+                    </td>
+                                    			<td class="day withShow weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/36f/140_190_2/36f78e4978fac49c03e654baf390f25a.jpg');cursor:pointer;" onclick="window.location='/performance/pojaryi/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/pojaryi/"><p data-perfomans-id="5326" data-date="22.12.2019">
+															Пожары														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">18:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+									
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/692/140_190_2/692fa6072542edcfcaf34f185c363c76.jpg');cursor:pointer;" onclick="window.location='/performance/tsiniki/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/tsiniki/"><p data-perfomans-id="16827" data-date="22.12.2019">
+															Циники														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">22</div>
+                    </td>
+                            </tr>
+            <tr>
+                                                                			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/8a1/140_190_2/8a118a6eabd55c184de0d015fb48f1de.jpg');cursor:pointer;" onclick="window.location='/performance/451_po_farengeytu/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/451_po_farengeytu/"><p data-perfomans-id="5324" data-date="23.12.2019">
+															451 по Фаренгейту														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												<br><img src="/upload/medialibrary/images/LastTickets__60x23.png" alt="Последние билеты">
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">23</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/8a1/140_190_2/8a118a6eabd55c184de0d015fb48f1de.jpg');cursor:pointer;" onclick="window.location='/performance/451_po_farengeytu/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/451_po_farengeytu/"><p data-perfomans-id="5324" data-date="24.12.2019">
+															451 по Фаренгейту														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												<br><img src="/upload/medialibrary/images/LastTickets__60x23.png" alt="Последние билеты">
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">24</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/2df/140_190_2/2df7841963d5c960c6d3e6972d76bed3.jpg');cursor:pointer;" onclick="window.location='/performance/litsa/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/litsa/"><p data-perfomans-id="5331" data-date="25.12.2019">
+															Лица														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												<br><img src="/upload/medialibrary/images/LastTickets__60x23.png" alt="Последние билеты">
+												</div>
+								</a>
+				</div>
+		</div>
+									
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/0ff/140_190_2/0fffdfa800154829c42853da3c196f2b.JPG');cursor:pointer;" onclick="window.location='/performance/moya-zhizn/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/moya-zhizn/"><p data-perfomans-id="16859" data-date="25.12.2019">
+															Моя жизнь														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">20:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">25</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/feb/140_190_2/feb17e78be1862c7ba4336a9d4a2b2d9.jpg');cursor:pointer;" onclick="window.location='/performance/eto-tak-esli-vam-tak-kazhetsya/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/eto-tak-esli-vam-tak-kazhetsya/"><p data-perfomans-id="16231" data-date="26.12.2019">
+															Это так (если вам так кажется)														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">26</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/ffc/140_190_2/ffceaa0efcede4adffe3e69d1a7b5529.JPG');cursor:pointer;" onclick="window.location='/performance/serdtse-ne-kamen/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/serdtse-ne-kamen/"><p data-perfomans-id="5336" data-date="27.12.2019">
+															Сердце не камень														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">18:00</span>
+																		<br>
+												<img src="/upload/medialibrary/images/SoldOut__60x23.png" alt="Все билеты проданы">
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">27</div>
+                    </td>
+                                    			<td class="day withShow weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/a47/140_190_2/a47001d55a8b583737b20be75177c261.jpg');cursor:pointer;" onclick="window.location='/performance/vanya_i_krokodil/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/vanya_i_krokodil/"><p data-perfomans-id="5346" data-date="28.12.2019">
+															Ваня и Крокодил														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">12:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+									
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/099/140_190_2/0999dc0b7fe76da233de8eda8ae4abaa.jpg');cursor:pointer;" onclick="window.location='/performance/blazhennyy-ostrov/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/blazhennyy-ostrov/"><p data-perfomans-id="16939" data-date="28.12.2019">
+															Блаженный остров														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">28</div>
+                    </td>
+                                    			<td class="day withShow weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/a47/140_190_2/a47001d55a8b583737b20be75177c261.jpg');cursor:pointer;" onclick="window.location='/performance/vanya_i_krokodil/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/vanya_i_krokodil/"><p data-perfomans-id="5346" data-date="29.12.2019">
+															Ваня и Крокодил														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">12:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+									
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/099/140_190_2/0999dc0b7fe76da233de8eda8ae4abaa.jpg');cursor:pointer;" onclick="window.location='/performance/blazhennyy-ostrov/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/blazhennyy-ostrov/"><p data-perfomans-id="16939" data-date="29.12.2019">
+															Блаженный остров														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">18:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">29</div>
+                    </td>
+                            </tr>
+            <tr>
+                                                                			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/8d3/140_190_2/8d3b3379d5a4e22409caa6ff018b7dd3.jpg');cursor:pointer;" onclick="window.location='/performance/dekameron-ili-lyubov-vo-vremya-chumy/';">
+														
+															
+														
+							<div class="banner">
+															<a href="/performance/dekameron-ili-lyubov-vo-vremya-chumy/"><p data-perfomans-id="16016" data-date="30.12.2019">
+															Декамерон. Любовь во время чумы														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">19:00</span>
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">30</div>
+                    </td>
+                                    			<td class="day withShow">
+
+<div class="slides">
+
+<div class="slidesWrap">
+							
+																	<div class="slide" style="background-image:url('/upload/resize_cache/iblock/c03/140_190_2/c036437306b58148a6c7bb1df0589419.jpg');cursor:pointer;" onclick="window.location='/performance/v-zone-dostupa/';">
+														
+															
+								
+								<div class="premierLabel2 unselectable"><span>ПРЕМЬЕРА</span></div>
+														
+							<div class="banner">
+															<a href="/performance/v-zone-dostupa/"><p data-perfomans-id="16414" data-date="31.12.2019">
+															В зоне доступа														</p>
+							
+																		<div style="text-align: center;float: left;padding-left: 10px;">
+							<span style="color: #FEFEFE;text-shadow: 1px 1px 1px #000;font: 14px 'Hvn Regular';vertical-align:top;">18:00</span>
+												<br><img src="/upload/medialibrary/images/LastTickets__60x23.png" alt="Последние билеты">
+												</div>
+								</a>
+				</div>
+		</div>
+		
+</div>
+</div>
+<div class="daynumber">31</div>
+                    </td>
+                                    			<td class="day past">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">1</div>
+                    </td>
+                                    			<td class="day past">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">2</div>
+                    </td>
+                                    			<td class="day past">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">3</div>
+                    </td>
+                                    			<td class="day past weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">4</div>
+                    </td>
+                                    			<td class="day past weekday">
+
+<div class="slides">
+
+<div class="slidesWrap">
+
+</div>
+</div>
+<div class="daynumber">5</div>
+                    </td>
+                            </tr>
+            <tr>
+                    </tr>
+    </table>
+</div>
+
+</div><div class="clearFix"></div>
+<footer>
+    <p class="copy">&copy 2007-2019, Театр Et Cetera</p>
+    <div class="adr">
+        <p><span>E-mail:</span> <!--<a href="mailTo:etc-theatre@mail.ru">etc-theatre@mail.ru</a>--><a href="mailTo:theatre@et-cetera.ru">theatre@et-cetera.ru</a><!--<a href="mailTo:etc@theatre.ru">etc@theatre.ru</a>--></p>
+        <p><span>Адрес:</span> 101000, Москва, Фролов пер., 2<br><span>Проезд:</span> Метро &laquo;Тургеневская&raquo;, &laquo;Чистые&nbsp;пруды&raquo;, &laquo;Сретенский бульвар&raquo;</p>
+        <a class="directions" href="/directions/">Схема проезда</a>
+    </div>
+    <div class="info">Справки и заказ билетов<br>по телефонам:
+        <p><a href="tel:+74957817811">+7 (495) 781-781-1</a><br><a href="tel:+74956254847">+7 (495) 625-48-47</a></p>
+    </div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">var yaParams = {/*Здесь параметры визита*/};</script><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26781675 = new Ya.Metrika({id:26781675, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true,params:window.yaParams||{ }}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/26781675" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="shadow"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
