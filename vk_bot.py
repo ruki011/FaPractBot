@@ -1,12 +1,11 @@
-#Не терять
-# https://vk.com/dev/methods
-
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
+from vk_api.keyboard import VkKeyboard, VkKeyboardColor
+from vk_api.utils import get_random_id
 from random import randint
 
-def get_random_id():
-    return randint(100000,999999)
+import parser1
+import parser2
 
 def write_msg(user_id, message):
     vk.method('messages.send', {'user_id': user_id,  'random_id': get_random_id(), 'message': message})
@@ -34,8 +33,19 @@ for event in longpoll.listen():
             
             # Каменная логика ответа
             if request == "/start":
-                write_msg(event.user_id, "Привет, я  тебе список и время театров")
-            elif request == "пока":
-                write_msg(event.user_id, "Пока((")
+                
+                keyboard = VkKeyboard(one_time=True)
+                keyboard.add_button('Белая кнопка', color=VkKeyboardColor.DEFAULT)
+                keyboard.add_button('Зелёная кнопка', color=VkKeyboardColor.DEFAULT)
+
+                vk.method('messages.send', {'user_id': event.user_id,  'random_id': get_random_id(), "keyboard" : keyboard.get_keyboard(), 'message': "CHECK"})
+
+                #write_msg(event.user_id, "Привет, я подскажу тебе график спектаклей\nДля начала выбери источник, который хочешь использовать:")
+            
+            elif request == "Белая кнопка":
+                write_msg(event.user_id, "Белая кнопка")
+
+            elif request == "'Зелёная кнопка":
+                write_msg(event.user_id, "'Зелёная кнопка")
             else:
                 write_msg(event.user_id, "Не поняла вашего ответа...")
