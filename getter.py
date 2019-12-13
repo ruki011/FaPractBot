@@ -36,6 +36,12 @@ def site1_module():
                 value = theatre_place_time.text.replace("\t","")
                 value = value.replace("\n"," ")
                 print("Место/время:", value[1:])
+
+            #Проверка на доступность билетов
+            tickets_status = theatre.find("span", class_="sold")
+            print(tickets_status.text)
+
+            
             
 
 def site2_module():
