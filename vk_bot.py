@@ -29,13 +29,12 @@ for event in longpoll.listen():
         # Если оно имеет метку для меня( то есть бота)
         if event.to_me:
             
-            print(event)
             # Сообщение от пользователя
             request = event.text
             
             # Каменная логика ответа
-            if request == "привет":
-                write_msg(event.user_id, "Хай")
+            if request == "/start":
+                write_msg(event.user_id, "Привет, я  тебе список и время театров")
             elif request == "пока":
                 write_msg(event.user_id, "Пока((")
             else:
