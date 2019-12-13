@@ -97,8 +97,6 @@ def site2_module():
             value = value.replace("\n"," ")
             print(value)
     
-    print("*"*10)
-    
     #Баннер сегодня
     today_banners = content.find_all("td", class_="day today withShow")
     for banner in today_banners:
@@ -114,18 +112,16 @@ def site2_module():
 
 
     #Баннеры в выходные дни
-    #day withShow weekday
-    print("*"*10)
-    weekday_banners = content.find_all("td", class_="withShow weekday")
+    weekday_banners = content.find_all("td", class_="day withShow weekday")
     for banner in weekday_banners:
-        print(banner)
         #Название театра
-        banner_title = banner.find("div", class_="banner")
-        check = banner_title.find("p")
-        print(check.get("data-date"))
-        value = banner_title.text.replace("\t","")
-        value = value.replace("\n"," ")
-        print(value)
+        banner_titles = banner.find_all("div", class_="banner")
+        for banner_title in banner_titles:
+            check = banner_title.find("p")
+            print(check.get("data-date"))
+            value = banner_title.text.replace("\t","")
+            value = value.replace("\n"," ")
+            print(value)
 
 if __name__ == "__main__":
     site2_module()
