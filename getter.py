@@ -19,34 +19,39 @@ def site1_module():
         theatre_dict[date_string] = {}
 
 
+        #Словарь для временного хранения данных
+        locale_dict = {"names":{}}
+
         #Находим все представления/выступления в секции (на текущую дату)
         theatres = section.find_all("tr", class_="past_q")
         for theatre in theatres:
-
-            #Словарь для временного хранения данных
-            locale_dict = {}
             
+            processing_flag = False
             #Название выступления
             theatre_name = theatre.find("a", class_="timetable_content__performance_title")
             if theatre_name != None:
-                #Если нет названия выступления, то никакую другую информацию уже о нём не получаем
                 print("Название:", theatre_name.text)
-            
-            #Описание выступления
-            theatre_description = theatre.find("p", class_="timetable_content__performance_description")
-            if theatre_description != None and theatre_description.text != "":
-                print("Описание:", theatre_description.text)
-            
-            #Место и время выступления
-            theatre_place_time = theatre.find("td", class_="timetable_content__place")
-            if theatre_place_time != None:
-                value = theatre_place_time.text.replace("\t","")
-                value = value.replace("\n"," ")
-                print("Место/время:", value[1:])
+                locale_dict["names"][theatre_name.text] = {"description" : None, "place&time" : None}
+                processing_flag = True
 
-            #Проверка на доступность билетов
-            tickets_status = theatre.find("span", class_="sold")
-            print(tickets_status.text)
+            #Если есть название выступления, то продолжаем работу
+            if processing_flag == True:
+                #Описание выступления
+                theatre_description = theatre.find("p", class_="timetable_content__performance_description")
+                if theatre_description != None and theatre_description.text != "":
+                    print("Описание:", theatre_description.text)
+                    locale_dict["names"][theatre_name.text]["description"] = theatre_description.text
+                
+                #Место и время выступления
+                theatre_place_time = theatre.find("td", class_="timetable_content__place")
+                if theatre_place_time != None:
+                    value = theatre_place_time.text.replace("\t","")
+                    value = value.replace("\n"," ")
+                    print("Место/время:", value[1:])
+                    locale_dict["names"][theatre_name.text]["place&time"] = value[1:]
+        print(locale_dict)
+        theatre_dict[date_string] = locale_dict
+
 
             
             
