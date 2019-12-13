@@ -60,9 +60,18 @@ def site2_module():
     #print("https://et-cetera.ru/poster/?month=2&year=2020") - динамическая ссылка
     response = requests.get("https://et-cetera.ru/poster/").text
     content = BeautifulSoup(response,"lxml")
-    banners = content.find_all("div", class_="banner")
+    banners = content.find_all("td", class_="day withShow")
     for banner in banners:
-        print(banner)
+
+        #Название театра
+        banner_title = content.find("div", class_="banner")
+        check = banner_title.find("p")
+        print(check)
+        #for c in check:
+        #    print(c)
+        value = banner_title.text.replace("\t","")
+        value = value.replace("\n"," ")
+        #print(value)
 
 
 if __name__ == "__main__":
