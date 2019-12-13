@@ -52,7 +52,30 @@ def site1_module():
     print(theatre_dict)
 
 
-            
+def date_detector(date):
+    #Введите месяц и год в формате 01/2020:
+    month_dict = {
+        "01": "1",
+        "02": "2",
+        "03": "3",
+        "04": "4",
+        "05": "5",
+        "06": "6",
+        "07": "7",
+        "08": "8",
+        "09": "9",
+        "10": "10",
+        "11": "11",
+        "12": "12",
+    }
+
+
+    month, year = date.split("/")  
+    if month in month_dict:
+        month = month_dict[month]
+    
+    url = "https://et-cetera.ru/poster/?month="+month+"&year="+year
+
 def site2_module():
 
     #theatre_dict = {}
@@ -60,6 +83,8 @@ def site2_module():
     #print("https://et-cetera.ru/poster/?month=2&year=2020") - динамическая ссылка
     response = requests.get("https://et-cetera.ru/poster/").text
     content = BeautifulSoup(response,"lxml")
+
+    #Баннеры в будние дни
     banners = content.find_all("td", class_="day withShow")
     for banner in banners:
 
@@ -70,7 +95,12 @@ def site2_module():
         value = banner_title.text.replace("\t","")
         value = value.replace("\n"," ")
         print(value)
+    
+    #Баннеры в выходные дни
+    #day withShow weekday
 
+    
+    #slide active ???
 
 if __name__ == "__main__":
     site2_module()
