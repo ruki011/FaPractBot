@@ -1,6 +1,6 @@
-#Добавить JSON отдачу?
 from bs4 import BeautifulSoup
 import requests
+import json
 
 #Функция формирования url на основе даты
 def date2url(date):
@@ -29,7 +29,6 @@ def date2url(date):
 #Функция с основной логикой парсинга сайта
 def site2(url):
 
-    theatre_dict = {}
     response = requests.get("https://et-cetera.ru/poster/").text
     content = BeautifulSoup(response,"lxml")
 
@@ -58,14 +57,25 @@ def site2(url):
     weekday_list = []
     weekday_banners = content.find_all("td", class_="day withShow weekday")
     for banner in weekday_banners:
-        #Название театра
+        
+        #Название выступления
         banner_titles = banner.find_all("div", class_="banner")
         theatre_list = all_banners(banner_titles)
         weekday_list.extend(theatre_list)
 
     #Соединяем все списки 
-    print(daily_list, today_list, weekday_list)
-    return True
+    global_list = daily_list + today_list + weekday_list
+    
+    #Формируем словарь
+    theatre_dict = {} 
+    for event in global_list:
+        date = event["date"]
+        name = event["name"]
+        if date not in theatre_dict:
+            theatre_dict[date] = []
+        theatre_dict[date].append(name)
+
+    return json.dumps(theatre_dict,ensure_ascii=False)
 
 #Функция для получения всех спектаклей на текущий день
 def all_banners(banner_titles):
@@ -90,6 +100,7 @@ def parser():
     #Введите месяц и год в формате 01/2020:
     url = date2url("01/2020")
     result = site2(url)
+    print(result)
 
 if __name__ == "__main__":
     parser()

@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
+import json
 
+#Функция с основной логикой парсинга сайта
 def site1():
 
     theatre_dict = {}
@@ -49,7 +51,13 @@ def site1():
                 locale_list.append(locale_dict)
 
         theatre_dict[date_string] = {"names": locale_list}
-    print(theatre_dict)
+    
+    return json.dumps(theatre_dict,ensure_ascii=False)
+
+#Функция, вызываемая из бота
+def parser():
+    result = site1()
+    print(result)
 
 if __name__ == "__main__":
-    site1()
+    parser()
