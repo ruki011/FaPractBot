@@ -88,6 +88,37 @@ def site2_module():
     banners = content.find_all("td", class_="day withShow")
     for banner in banners:
 
+        #Название выступления
+        banner_titles = banner.find_all("div", class_="banner")
+        for banner_title in banner_titles:
+            check = banner_title.find("p")
+            print(check.get("data-date"))
+            value = banner_title.text.replace("\t","")
+            value = value.replace("\n"," ")
+            print(value)
+    
+    print("*"*10)
+    
+    #Баннер сегодня
+    today_banners = content.find_all("td", class_="day today withShow")
+    for banner in today_banners:
+        
+        #Название выступления
+        banner_titles = banner.find_all("div", class_="banner")
+        for banner_title in banner_titles:
+            check = banner_title.find("p")
+            print(check.get("data-date"))
+            value = banner_title.text.replace("\t","")
+            value = value.replace("\n"," ")
+            print(value)
+
+
+    #Баннеры в выходные дни
+    #day withShow weekday
+    print("*"*10)
+    weekday_banners = content.find_all("td", class_="withShow weekday")
+    for banner in weekday_banners:
+        print(banner)
         #Название театра
         banner_title = banner.find("div", class_="banner")
         check = banner_title.find("p")
@@ -95,12 +126,6 @@ def site2_module():
         value = banner_title.text.replace("\t","")
         value = value.replace("\n"," ")
         print(value)
-    
-    #Баннеры в выходные дни
-    #day withShow weekday
-
-    
-    #slide active ???
 
 if __name__ == "__main__":
     site2_module()
