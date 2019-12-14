@@ -1,3 +1,4 @@
+#ТОDO проверка на то, еть ли вообще концерты в этот день
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 from vk_api.keyboard import VkKeyboard, VkKeyboardColor

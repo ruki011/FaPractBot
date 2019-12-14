@@ -11,6 +11,9 @@ def format(json_data):
         for name in value:
             out_str += "\n"+name
         out_list.append(out_str+"\n")
-
+    
+    if out_list == []:
+        out_list.append("Спектакли за указанный месяц не найдены!")
+    
     return out_list
     
