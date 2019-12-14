@@ -29,7 +29,7 @@ def date2url(date):
 #Функция с основной логикой парсинга сайта
 def site2(url):
 
-    response = requests.get("https://et-cetera.ru/poster/").text
+    response = requests.get(url).text
     content = BeautifulSoup(response,"lxml")
 
     #Баннеры в будние дни
