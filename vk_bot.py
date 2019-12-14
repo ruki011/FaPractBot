@@ -7,6 +7,9 @@ from random import randint
 import parser1
 import parser2
 
+import formater1
+import formater2
+
 def write_msg(user_id, message):
     vk.method('messages.send', {'user_id': user_id,  'random_id': get_random_id(), 'message': message})
 
@@ -44,7 +47,9 @@ for event in longpoll.listen():
             elif request == "bolshoi ru":
                 write_msg(event.user_id, "Получаем данные..")
                 result = parser1.parser()
-                print(result)
+                send_list = formater1.format(result)
+                for s in send_list:
+                    write_msg(event.user_id, s)
 
             elif request == "et-cetera ru":
                 universal_dict[event.user_id] = True
@@ -54,7 +59,9 @@ for event in longpoll.listen():
                     if len(request) == 7 and "/" in request:
                         write_msg(event.user_id, "Получаем данные..")
                         result = parser2.parser(request)
-                        print(result)
+                        send_list = formater2.format(result)
+                        for s in send_list:
+                            print(s)
                         universal_dict.pop(event.user_id, None)
                     else:
                         write_msg(event.user_id, "Некорректный ввод даты!")
