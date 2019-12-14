@@ -57,7 +57,4 @@ def site1():
 #Функция, вызываемая из бота
 def parser():
     result = site1()
-    print(result)
-
-if __name__ == "__main__":
-    parser()
+    return result

@@ -96,11 +96,7 @@ def all_banners(banner_titles):
     return out_list
 
 #Функция, вызываемая из бота
-def parser():
-    #Введите месяц и год в формате 01/2020:
-    url = date2url("01/2020")
+def parser(date):
+    url = date2url(date)
     result = site2(url)
-    print(result)
-
-if __name__ == "__main__":
-    parser()
+    return result
