@@ -61,7 +61,8 @@ for event in longpoll.listen():
                         result = parser2.parser(request)
                         send_list = formater2.format(result)
                         for s in send_list:
-                            print(s)
-                        universal_dict.pop(event.user_id, None)
+                            write_msg(event.user_id, s)
                     else:
                         write_msg(event.user_id, "Некорректный ввод даты!")
+                    
+                    universal_dict.pop(event.user_id, None)
