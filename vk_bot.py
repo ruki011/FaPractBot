@@ -40,6 +40,7 @@ for event in longpoll.listen():
             # Каменная логика ответа
             if request == "/start":
 
+                universal_dict[event.user_id] = {}
                 keyboard = VkKeyboard(one_time=True)
                 keyboard.add_button('bolshoi ru', color=VkKeyboardColor.DEFAULT)
                 keyboard.add_button('et-cetera ru', color=VkKeyboardColor.DEFAULT)
@@ -48,18 +49,18 @@ for event in longpoll.listen():
                           {'user_id': event.user_id, 'random_id': get_random_id(), "keyboard": keyboard.get_keyboard(),
                            'message': message_str})
 
-            elif request == "bolshoi ru":
+            elif request == "bolshoi ru" and event.user_id in universal_dict:
                 universal_dict[event.user_id]["source"] = 1
-                write_msg(event.user_id, "Введите месяц и год в формате 01/2020 для отображения расписания на конкретный период:")
+                write_msg(event.user_id, "Введите месяц и год в формате 01/2020 для отображения расписания на конкретный месяц или день месяц и год в формате 01/01/2020 для отображения расписания на конкретный день")
 
-            elif request == "et-cetera ru":
+            elif request == "et-cetera ru" and event.user_id in universal_dict:
                 universal_dict[event.user_id]["source"] = 2
                 write_msg(event.user_id, "Введите месяц и год в формате 01/2020 для отображения расписания на конкретный период:")
             else:
                 if event.user_id in universal_dict:
                     
                     #Если введенная дата является корректной
-                    if len(request) == 7 and "/" in request:
+                    if (len(request) == 7 and "/" in request) or (len(request) == 10 and "/" in request):
                         
                         write_msg(event.user_id, "Получаем данные..")
                         #Если был выбран источник №1
