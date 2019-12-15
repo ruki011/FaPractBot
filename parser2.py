@@ -71,9 +71,9 @@ def site2(url):
     # Формируем список
     theatre_list = []
     for event in global_list:
-        theatre_list.append({"name": event["name"], "date" : event["date"]})
- 
-    theatre_list.sort(key=lambda y: (y["date"])) 
+        theatre_list.append({"name": event["name"], "date": event["date"]})
+
+    theatre_list.sort(key=lambda y: (y["date"]))
 
     return theatre_list
 
@@ -95,20 +95,20 @@ def all_banners(banner_titles):
 
     return out_list
 
+
 def filter_by_date(lst, date):
-    
     try:
         day, month, year = date.split("/")
     except ValueError:
         return json.dumps(lst, ensure_ascii=False)
-    
+
     new_lst = []
     for e in lst:
-        if e["date"] == day+"."+month+"."+year:
+        if e["date"] == day + "." + month + "." + year:
             new_lst.append(e)
-    
+
     return json.dumps(new_lst, ensure_ascii=False)
-    
+
 
 # Функция, вызываемая из бота
 def parser(date):

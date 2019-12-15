@@ -3,6 +3,7 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
+
 # Функция с основной логикой парсинга сайта
 def site1():
     theatre_dict = {}
@@ -54,58 +55,60 @@ def site1():
 
     return theatre_dict
 
+
 def filter_by_date(dct, date):
     formated_d = {}
     month_name2number = {
-        "01":"января",
-        "02":"февраля",
+        "01": "января",
+        "02": "февраля",
         "03": "марта",
         "04": "апреля",
         "05": "мая",
         "06": "июня",
         "07": "июля",
-        "08":"августа",
-        "09":"сентября",
-        "10":"октября",
-        "11":"ноября",
-        "12":"декабря",
+        "08": "августа",
+        "09": "сентября",
+        "10": "октября",
+        "11": "ноября",
+        "12": "декабря",
     }
 
     date_type = ""
-    
-    #Если дата в виде дня/месяца/года
+
+    # Если дата в виде дня/месяца/года
     try:
         day, month, year = date.split("/")
         date_type = "day/month/year"
-    
-    #Если дата в виде месяца/года
+
+    # Если дата в виде месяца/года
     except ValueError:
         month, year = date.split("/")
         date_type = "month/year"
-    
-    #Слово для поиска месяца
+
+    # Слово для поиска месяца
     search_word = month_name2number[month]
-    
-    #Если дата в виде месяца/года
+
+    # Если дата в виде месяца/года
     if date_type == "month/year":
         for key in dct:
             if search_word in key:
                 formated_d[key] = dct[key]
-    
-    #Если дата в виде дня/месяца/года
+
+    # Если дата в виде дня/месяца/года
     elif date_type == "day/month/year":
-        
+
         for key in dct:
             if search_word in key and day in key:
                 formated_d[key] = dct[key]
 
     return json.dumps(formated_d, ensure_ascii=False)
 
+
 # Функция, вызываемая из бота
 def parser(date):
-    #Получаем все данные
+    # Получаем все данные
     all_d = site1()
-    #Фильтруем на спектали по дате
+    # Фильтруем на спектали по дате
     result = filter_by_date(all_d, date)
-    #Фильтруем на данные согласно дате
+    # Фильтруем на данные согласно дате
     return result
