@@ -79,7 +79,7 @@ def filter_by_date(dct, date):
         date_type = "day/month/year"
     
     #Если дата в виде месяца/года
-    except:
+    except ValueError:
         month, year = date.split("/")
         date_type = "month/year"
     

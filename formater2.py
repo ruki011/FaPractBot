@@ -3,7 +3,13 @@ import json
 
 def format(json_data):
     out_list = []
-    d = json.loads(json_data)
+    
+    l = json.loads(json_data)
+    
+
+
+
+
 
     for key, value in d.items():
         out_str = "📅 " + key

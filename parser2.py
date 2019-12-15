@@ -21,7 +21,11 @@ def date2url(date):
         "12": "12",
     }
 
-    month, year = date.split("/")
+    try:
+        day, month, year = date.split("/")
+    except ValueError:
+        month, year = date.split("/")
+
     if month in month_dict:
         month = month_dict[month]
 
@@ -64,19 +68,17 @@ def site2(url):
     # Соединяем все списки
     global_list = daily_list + today_list + weekday_list
 
-    # Формируем словарь
-    theatre_dict = {}
+    # Формируем список
+    theatre_list = []
     for event in global_list:
-        date = event["date"]
-        name = event["name"]
-        if date not in theatre_dict:
-            theatre_dict[date] = []
-        theatre_dict[date].append(name)
+        theatre_list.append({"name": event["name"], "date" : event["date"]})
+ 
+    theatre_list.sort(key=lambda y: (y["date"])) 
 
-    return json.dumps(theatre_dict, ensure_ascii=False)
+    return theatre_list
 
 
-# Функция для получения всех спектаклей на текущий день
+# Функция парсинга всех спектаклей на текущий день
 def all_banners(banner_titles):
     out_list = []
     for b_title in banner_titles:
@@ -93,9 +95,26 @@ def all_banners(banner_titles):
 
     return out_list
 
+def filter_by_date(lst, date):
+    
+    try:
+        day, month, year = date.split("/")
+    except ValueError:
+        return json.dumps(lst, ensure_ascii=False)
+    
+    new_lst = []
+    print(day,month,year)
+    for e in lst:
+        if e["date"] == day+"."+month+"."+year:
+            new_lst.append(e)
+    
+    print(new_lst)
+    return json.dumps(new_lst, ensure_ascii=False)
+    
 
 # Функция, вызываемая из бота
 def parser(date):
     url = date2url(date)
-    result = site2(url)
+    all_d = site2(url)
+    result = filter_by_date(all_d, date)
     return result

@@ -44,7 +44,7 @@ for event in longpoll.listen():
                 keyboard = VkKeyboard(one_time=True)
                 keyboard.add_button('bolshoi ru', color=VkKeyboardColor.DEFAULT)
                 keyboard.add_button('et-cetera ru', color=VkKeyboardColor.DEFAULT)
-                message_str = "Привет, я подскажу тебе график спектаклей\nДля начала выбери источник, который хочешь использовать:"
+                message_str = "Здравствуйте, я подскажу Вам график спектаклей\nДля начала выберите источник, который хотите использовать:"
                 vk.method('messages.send',
                           {'user_id': event.user_id, 'random_id': get_random_id(), "keyboard": keyboard.get_keyboard(),
                            'message': message_str})
@@ -55,7 +55,7 @@ for event in longpoll.listen():
 
             elif request == "et-cetera ru" and event.user_id in universal_dict:
                 universal_dict[event.user_id]["source"] = 2
-                write_msg(event.user_id, "Введите месяц и год в формате 01/2020 для отображения расписания на конкретный период:")
+                write_msg(event.user_id, "Введите месяц и год в формате 01/2020 для отображения расписания на конкретный месяц или день месяц и год в формате 01/01/2020 для отображения расписания на конкретный день")
             else:
                 if event.user_id in universal_dict:
                     
