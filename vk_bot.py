@@ -37,7 +37,6 @@ for event in longpoll.listen():
             # Сообщение от пользователя
             request = event.text
 
-            # Каменная логика ответа
             if request == "/start":
 
                 universal_dict[event.user_id] = {}
@@ -80,3 +79,6 @@ for event in longpoll.listen():
                         write_msg(event.user_id, "Некорректный ввод даты!")
 
                     universal_dict.pop(event.user_id, None)
+                
+                else:
+                    write_msg(event.user_id, "Напишите мне /start для начала работы 😉")

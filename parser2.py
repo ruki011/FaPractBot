@@ -103,12 +103,10 @@ def filter_by_date(lst, date):
         return json.dumps(lst, ensure_ascii=False)
     
     new_lst = []
-    print(day,month,year)
     for e in lst:
         if e["date"] == day+"."+month+"."+year:
             new_lst.append(e)
     
-    print(new_lst)
     return json.dumps(new_lst, ensure_ascii=False)
     
 
