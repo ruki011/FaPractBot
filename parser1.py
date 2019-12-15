@@ -95,8 +95,6 @@ def filter_by_date(dct, date):
     #Если дата в виде дня/месяца/года
     elif date_type == "day/month/year":
         
-        #Избавляемся от 0 слева, если день < 10
-        day = str(int(day))
         for key in dct:
             if search_word in key and day in key:
                 formated_d[key] = dct[key]

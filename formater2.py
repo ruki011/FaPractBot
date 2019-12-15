@@ -13,6 +13,6 @@ def format(json_data):
         out_list.append(out_str + "\n")
 
     if out_list == []:
-        out_list.append("Спектакли за указанный месяц не найдены!")
+        out_list.append("Спектакли за указанный промежуток времени не найдены!")
 
     return out_list
