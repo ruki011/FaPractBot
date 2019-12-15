@@ -49,24 +49,32 @@ for event in longpoll.listen():
                            'message': message_str})
 
             elif request == "bolshoi ru":
-                write_msg(event.user_id, "Получаем данные..")
-                result = parser1.parser()
-                send_list = formater1.format(result)
-                for s in send_list:
-                    write_msg(event.user_id, s)
+                universal_dict[event.user_id]["source"] = 1
+                write_msg(event.user_id, "Введите месяц и год в формате 01/2020 для отображения расписания на конкретный период:")
 
             elif request == "et-cetera ru":
-                universal_dict[event.user_id] = True
-                write_msg(event.user_id,
-                          "Введите месяц и год в формате 01/2020 для отображения расписания на конкретный период:")
+                universal_dict[event.user_id]["source"] = 2
+                write_msg(event.user_id, "Введите месяц и год в формате 01/2020 для отображения расписания на конкретный период:")
             else:
                 if event.user_id in universal_dict:
+                    
+                    #Если введенная дата является корректной
                     if len(request) == 7 and "/" in request:
+                        
                         write_msg(event.user_id, "Получаем данные..")
-                        result = parser2.parser(request)
-                        send_list = formater2.format(result)
-                        for s in send_list:
-                            write_msg(event.user_id, s)
+                        #Если был выбран источник №1
+                        if universal_dict[event.user_id]["source"] == 1:
+                            result = parser1.parser(request)
+                            send_list = formater1.format(result)
+                            for s in send_list:
+                                write_msg(event.user_id, s)
+                        
+                        #Иначе если был выбран источник №2
+                        elif universal_dict[event.user_id]["source"] == 2:
+                            result = parser2.parser(request)
+                            send_list = formater2.format(result)
+                            for s in send_list:
+                                write_msg(event.user_id, s)
                     else:
                         write_msg(event.user_id, "Некорректный ввод даты!")
 

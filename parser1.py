@@ -57,6 +57,8 @@ def site1():
 
 
 # Функция, вызываемая из бота
-def parser():
+def parser(date):
+    #Получаем все данные
     result = site1()
+    #Фильтруем на данные согласно дате
     return result
